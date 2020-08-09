@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <title>Covid-19 tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="row">
+        <div class="col-12">
+          <img src="./IMG/Rectangle 1.png" alt="Covid-19 image" />
+          <h1 class="d-inline">YISON COVID-19 TRACKER</h1>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-12">
+          <h5 id="country" class="d-inline mr-3">Ghana's Stats</h5>
+          &verbar;
+
+          <select name="" id="countries" class="ml-3 shadow">
+            <option value="">selecta country</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="row my-3">
+        <div class="col-md-3">
+          <div class="shadow rounded pl-3 py-4 bg-info text-white">
+            <span>Total Cases</span>
+            <h3 class="case" id="total">Loading...</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="shadow rounded pl-3 py-4 bg-success text-white">
+            <span>Recovered</span>
+            <h3 class="case" id="recovered">Loading...</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="shadow rounded pl-3 py-4 bg-danger text-white">
+            <span>Active Cases</span>
+            <h3 class="case" id="active">Loading...</h3>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="shadow rounded pl-3 py-4 bg-dark text-white">
+            <span>Deaths</span>
+            <h3 class="case" id="deaths">Loading...</h3>
+          </div>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col-12">
+          <p>Global Stats <span id="global-count"></span></p>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <th>#</th>
+              <th>Country</th>
+              <th>Recovered</th>
+              <th>Confirmed</th>
+              <th>Active</th>
+              <th>Deaths</th>
+            </thead>
+            <tbody id="covid-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+      <p>
+        COPYRIGHT &copy;App Designed By Abdul Razak Mutiatu.
+      </p>
+    </div>
+
+    <!-- JS CDN -->
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
